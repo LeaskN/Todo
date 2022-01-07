@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Todo from './Todo';
+import Todos from './Todos';
 import TodoForm from './TodoForm';
 
 export default function TodoList(){
@@ -36,7 +36,7 @@ export default function TodoList(){
     <div>
       <h1>What needs to be done today?</h1>
       <TodoForm onSubmit={addTodo} />
-      <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
+      <Todos todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
     </div>
   )
 }
