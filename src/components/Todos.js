@@ -9,8 +9,8 @@ export default function Todos({todos, completeTodo, removeTodo, updateTodo}){
     value: ''
   });
 
-  const submitUpdate = value => {
-    updateTodo(edit.id, value)
+  const submitUpdate = newTodo => {
+    updateTodo(edit.id, newTodo)
     setEdit({
       id: null, 
       value: ''
